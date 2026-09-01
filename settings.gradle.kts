@@ -3,6 +3,7 @@ pluginManagement {
         gradlePluginPortal()
         google()
         mavenCentral()
+        maven("[https://api.xposed.info/](https://api.xposed.info/)")
     }
 }
 plugins {
