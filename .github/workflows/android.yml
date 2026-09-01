@@ -9,8 +9,15 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-        with:
-          submodules: recursive
+
+      - name: Clean up template leftovers
+        run: |
+          sed -i '/libxposed-compat/d' settings.gradle.kts || true
+          sed -i '/libxposed-compat/d' settings.gradle || true
+          sed -i '/libxposed-compat/d' app/build.gradle.kts || true
+          sed -i '/libxposed-compat/d' app/build.gradle || true
+          rm -rf app/src/main/java/org/ || true
+          rm -rf app/src/main/java/com/ || true
 
       - name: Set up JDK 17
         uses: actions/setup-java@v4
