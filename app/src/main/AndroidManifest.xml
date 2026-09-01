@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="ExteraGram iOS Header" 
-        android:theme="@style/Theme.AppCompat.DayNight">
+        android:label="ExteraGram iOS Header">
 
         <meta-data
             android:name="xposedmodule"
             android:value="true" />
         <meta-data
             android:name="xposeddescription"
-            android:value="تغییر هدر اکستراگرام به استایل iOS" />
+            android:value="ExteraGram iOS Header Style by Poorya" />
         <meta-data
             android:name="xposedminversion"
             android:value="93" />
     </application>
+
 </manifest>
