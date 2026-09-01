@@ -13,7 +13,7 @@ public class IosHeaderMod implements IXposedHookLoadPackage {
 
     @Override
     public void handleLoadPackage(LoadPackageParam lpparam) throws Throwable {
-        if (!lpparam.packageName.equals("ir.extera.gram")) {
+        if (!lpparam.packageName.contains("telegram") && !lpparam.packageName.contains("extera")) {
             return;
         }
 
