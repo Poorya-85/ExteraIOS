@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.module"
+    namespace = "ir.poorya.exteraios"
     compileSdk = 36 // Can be modified as needed
 
     defaultConfig {
